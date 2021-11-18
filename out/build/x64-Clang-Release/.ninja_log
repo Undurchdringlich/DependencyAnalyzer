@@ -1,0 +1,7 @@
+# ninja log v5
+23	578	6589640458532851	CMakeFiles/DependencyAnalyzer.dir/Basic.cpp.obj	c267f2677a9ea7cd
+31	724	6589640459974172	CMakeFiles/DependencyAnalyzer.dir/Error.cpp.obj	a81ecbc990d4bebf
+1	825	6589640460965072	CMakeFiles/DependencyAnalyzer.dir/DependencyAnalyzer.cpp.obj	db4c8a3e3073639
+9	2150	6589640474202185	CMakeFiles/DependencyAnalyzer.dir/Tree.cpp.obj	88c1ed973f6cbc2c
+16	4594	6589640498619437	CMakeFiles/DependencyAnalyzer.dir/Analyzer.cpp.obj	c730db1c504f8b40
+4594	4852	6589640500906560	DependencyAnalyzer.exe	97b41d9265e6a245
