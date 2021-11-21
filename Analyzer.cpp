@@ -207,8 +207,14 @@ void Analyzer::FillTree(std::pair<std::string, std::string> pathToFile, Tree& tr
 
                     if (!isLineComment && !isMultiLineComment && include_match[3].length() > 0)
                     {
-                        //Добавляем файл из директивы #include в пул для рекурсивного прохода
-                        includes.emplace(std::make_pair(include_match[3], include_match[2]));
+                        fs::path currentInclude(include_match[3].str());
+                        if (currentInclude.extension() == ".hpp" || currentInclude.extension() == ".cpp")
+                        {
+                            //Добавляем файл из директивы #include в пул для рекурсивного прохода
+                            includes.emplace(std::make_pair(include_match[3], include_match[2]));
+                        }
+                        
+                        
                     }
                         
                 }

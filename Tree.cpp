@@ -155,13 +155,14 @@ Tree::Node* Tree::GetNode(Tree::Node& currentElement, Tree::Node& findNode)
 bool Tree::SearchUpParentRecursive(Tree::Node* node, Tree::Node& findNode)
 {
 	bool result = false;
-	if (node->data.path == findNode.data.path)
+
+	if (node != nullptr)
 	{
-		return true;
-	}
-	else
-	{
-		if (node != nullptr)
+		if (node->data.path == findNode.data.path)
+		{
+			return false;
+		}
+		else
 		{
 			if (node->parent != nullptr)
 			{
@@ -169,6 +170,7 @@ bool Tree::SearchUpParentRecursive(Tree::Node* node, Tree::Node& findNode)
 			}
 		}
 	}
+		
 	return result;
 }
 
